@@ -1,4 +1,10 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #ccc;
+}
+.CSV {
   text-align: center;
 }
 
