@@ -31,9 +31,9 @@ export default class App extends React.Component {
   };
   render() {
     let answers = this.state.answers.map((answer, index) => (
-      <div key={index}>
-        {answer.sum} - {answer.bb}
-      </div>
+      <span className="answer" key={index}>
+        {answer.sum} - {answer.bb} <br />
+      </span>
     ));
     return (
       <div className="">
