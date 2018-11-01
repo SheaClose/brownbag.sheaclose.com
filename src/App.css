@@ -2,12 +2,17 @@
 
 * {
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #ccc;
+  margin: 0;
+  padding: 0;
 }
 .CSV {
   text-align: center;
 }
-
-.answer:nth-child(-n + 9) {
-  background: #aaa;
+.Nav {
+  padding: 20px;
+  background: #7db9e8;
+  background: -moz-linear-gradient(top, #7db9e8 0%, #1e5799 100%);
+  background: -webkit-linear-gradient(top, #7db9e8 0%, #1e5799 100%);
+  background: linear-gradient(to bottom, #7db9e8 0%, #1e5799 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 );
 }

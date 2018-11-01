@@ -1,12 +1,14 @@
 import React from "react";
-import CSVReader from "react-csv-reader";
+import CSVReader from "./CsvParser";
 import "./App.css";
 export default class App extends React.Component {
   state = {
     csv: null,
     answers: []
   };
+
   handleForce = csv => {
+    // console.log("csv: ", csv);
     csv.forEach(c => {
       c.shift();
       c.pop();
@@ -36,14 +38,16 @@ export default class App extends React.Component {
       </span>
     ));
     return (
-      <div className="">
-        <CSVReader
-          cssClass="CSV"
-          value={this.state.csv}
-          label="Import Google Form CSV   "
-          onFileLoaded={this.handleForce}
-          onError={this.handleDarkSideForce}
-        />
+      <div>
+        <div>
+          <CSVReader
+            cssClass="Nav CSV"
+            value={this.state.csv}
+            label="Import Google Form CSV   "
+            onFileLoaded={this.handleForce}
+            onError={this.handleDarkSideForce}
+          />
+        </div>
         <hr />
         {answers}
       </div>
